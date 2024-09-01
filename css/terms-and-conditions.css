@@ -1,0 +1,36 @@
+body {
+
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.terms-and-conditions {
+    max-width: 70%;
+    margin: 2px auto;
+    padding: 20px;
+    text-align: justify;
+    
+}
+
+.section-term h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.roman-numeral {
+    margin-right: 15px; /* Ajusta este valor para el espacio deseado */
+}
+a{
+    color: rgb(118, 118, 219);
+    text-decoration: none;
+}
+@media (max-width: 900px){
+    .terms-and-conditions {
+        max-width: 100%;
+        margin: 2px auto;
+        padding: 20px;
+        text-align: justify;
+        
+    }
+}

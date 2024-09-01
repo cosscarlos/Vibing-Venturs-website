@@ -1,0 +1,205 @@
+.avioneta-description {
+    display: flex;
+    max-width: 70%;
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    margin: 0 auto;
+    text-align: justify;
+}
+.avioneta-description p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.video-container{
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing{
+    padding-top: 10px;
+    background-color: #31693D;
+    text-align: center;
+    padding-bottom: 70px;
+}
+.content-pricing{
+    display: inline-block;
+    min-width: 95%;
+}
+.pricing h3{
+    text-align: left;
+    color: rgb(247, 247, 222);
+    
+    font-size: 35px;
+}
+.pricing h4{
+    text-align: center;
+    
+    
+    font-size: 20px;
+}
+.pricing p{
+    
+    
+    text-align: justify;
+    
+  
+    font-size: 20px;
+   
+}
+
+/* Pricing Titles */
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.pricing-container-group{
+    cursor: pointer; /* Cambia el cursor al ícono de "mano" */
+  padding: 20px;
+ 
+  text-align: center;
+}
+
+.pricing-container{
+   display: flex;
+   justify-content: space-around;
+   gap: 20px;
+   
+   
+}
+
+.vibra-cuscatleca-head{
+    border: 3px solid black;
+    border-radius: 10px;    
+    padding-bottom: 0px;
+    margin-bottom: 25px;
+    background-color: rgb(247, 247, 222);
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
+    text-align: center;
+    min-width: 350px;
+    
+}
+.vuelo-de-coatepeque-head{
+    border: 3px solid black;
+    border-radius: 10px;    
+    padding-bottom: 0px;
+    margin-bottom: 25px;
+    background-color: #F3AB00;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
+    text-align: center;
+    color: white;
+    min-width: 350px;
+}
+.surf-sky-head{
+    border: 3px solid black;
+    border-radius: 10px;    
+    padding-bottom: 0px;
+    margin-bottom: 25px;
+    background-color: #EB8C23;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
+    text-align: center;
+    color: white;
+    min-width: 350px;
+}
+.barillas-aereo-head{
+    border: 3px solid black;
+    border-radius: 10px;    
+    padding-bottom: 0px;
+    margin-bottom: 25px;
+    background-color: #003E41;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
+    text-align: center;
+    color: white;
+    min-width: 350px;
+}
+/* Pricing data */
+
+.pricing-container-data{
+    padding-top: 30px;
+    display: flex;
+   justify-content: space-around;
+   gap: 20px;
+}
+.pricing-container-bg{
+    
+    border: 3px solid black;
+    border-radius: 10px;    
+    padding-bottom: 0px;
+    background-color: rgb(247, 247, 222);;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 1);
+    text-align: center;
+    color: black;
+    min-width: 350px;
+    max-width:350px;
+    
+}
+.pricing-container-bg:hover{
+    transform: scale(1.05);
+    
+}
+.pricing-container-bg{
+    transition: 0.5s;
+}
+.pricing-container-text{
+    display: flex;
+    
+    
+}
+.pricing-container-text p img{
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.pricing-container-text img{
+    width: 40px;
+    padding-left: 15px;
+   
+    padding-top: 25px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.pricing-container-text p{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+}
+.pricing-container-bg hr{
+    border: 0;
+    height: 4px;
+    
+    background-color: black;
+}
+
+@media (max-width: 900px) {
+    .avioneta-description {
+        display: block;
+        max-width: 100%;
+        width: 100%; /* Ajusta el ancho según tus necesidades */
+        margin: 0 auto;
+        text-align: justify;
+    }
+    .avioneta-description video{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+   
+    .pricing h3{
+        text-align: center;
+        color: rgb(247, 247, 222);
+        
+        font-size: 25px;
+    }
+    .pricing-container-data{
+        padding-top: 30px;
+        display: inline-block;
+       
+       gap: 20px;
+    }
+    .pricing-container-group{
+        margin-bottom: 20px;
+    }
+ 
+}

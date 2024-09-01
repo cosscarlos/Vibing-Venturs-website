@@ -1,0 +1,49 @@
+.about-cont {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinea .cont1 hacia la derecha */
+    max-width: 70%;
+    padding-bottom: 10px;
+}
+
+.cont1, .cont2 {
+    flex: 1;
+     /* Opcional, para agregar espacio alrededor del contenido */
+}
+.text-about{
+    text-align: justify;
+}
+.cont1 {
+    display: flex;
+    justify-content: flex-end; /* Alinea la imagen a la izquierda dentro de .cont1 */
+    align-items: center;         /* Centra verticalmente */
+}
+
+.cont1 img {
+    max-width: 200px; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto;    /* Mantiene la proporción de la imagen */
+    padding-right: 100px;
+}
+.mis-vis {
+    display: flex;
+    justify-content: center; /* Opcional, para añadir espacio entre los elementos */
+    align-items: center; /* Alinea los elementos en la parte superior */
+}
+
+.mision, .vision {
+    flex: 1;
+    padding: 10px; /* Añade espacio alrededor de cada sección */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+@media (max-width: 900px){
+    .about-cont {
+        display: block;
+        align-items: center;
+        justify-content: flex-start; /* Alinea .cont1 hacia la derecha */
+        max-width: 100%;
+        padding-bottom: 10px;
+    }
+}
+
+
+
