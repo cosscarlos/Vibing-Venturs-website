@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Vibing-Venturs-website.iml" filepath="$PROJECT_DIR$/.idea/Vibing-Venturs-website.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Vibing-Venturs-Front-end.iml" filepath="$PROJECT_DIR$/.idea/Vibing-Venturs-Front-end.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VibingVenturs-Backend.iml" filepath="$PROJECT_DIR$/VibingVenturs-Backend.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../VibingVenturs-Backend/com.vibingventurs.backend/src/main/main.iml" filepath="$PROJECT_DIR$/../VibingVenturs-Backend/com.vibingventurs.backend/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../VibingVenturs-Backend/com.vibingventurs.backend/src/test/test.iml" filepath="$PROJECT_DIR$/../VibingVenturs-Backend/com.vibingventurs.backend/src/test/test.iml" />
     </modules>
   </component>
 </project>
