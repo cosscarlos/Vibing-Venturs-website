@@ -88,7 +88,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "form-feature",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/pluralsight/Vibing-Venturs-website",
@@ -120,6 +120,13 @@
       <option name="filePath" />
       <method v="2" />
     </configuration>
+    <configuration name="VibingVentursBackendApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Vibing-venturs-backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.vibingventurs.VibingVentursBackendApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -130,7 +137,7 @@
       <updated>1788379007990</updated>
       <workItem from="1788379009526" duration="3756000" />
       <workItem from="1788406896096" duration="1259000" />
-      <workItem from="1788572741274" duration="6345000" />
+      <workItem from="1788572741274" duration="8586000" />
     </task>
     <servers />
   </component>
