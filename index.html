@@ -106,7 +106,7 @@
         <section class="contact-form">
             
             <h2>Contáctanos</h2>
-            <form id="contactForm" action="send_email.php" method="POST">
+            <form id="contactForm">
                 <label for="name">Nombre:</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -119,6 +119,7 @@
                 <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
                 <button type="submit">Enviar</button>
             </form>
+
             </div>
             <br>
         </section>
@@ -179,8 +180,31 @@
             document.getElementById('contactForm').addEventListener('submit', function(event) {
                 event.preventDefault();
                 grecaptcha.execute('6Lejig8qAAAAAO-Ea7tGydzKM8V4V1qM5HK9o3GT', {action: 'submit'}).then(function(token) {
-                    document.getElementById('g-recaptcha-response').value = token;
-                    document.getElementById('contactForm').submit();
+                    const name = document.getElementById('name').value;
+                    const email = document.getElementById('email').value;
+                    const message = document.getElementById('message').value;
+
+                    fetch('http://localhost:8080/api/contact', {
+                        method : 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            name: name,
+                            email: email,
+                            Message: message,
+                            recaptchaToken: token
+                        })
+                    })
+                        .then(response => response.json())
+                        .then(data => {
+                            alert('Mensaje enviado correctamente. ¡Gracias por contactarnos!');
+                            document.getElementById('contactForm').reset();
+                        })
+                        .catch(error => {
+                            alert('Error al enviar el mensaje');
+                            console.error('Error:', error);
+                        });
                 });
             });
         });
