@@ -8,10 +8,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c26a739c-019d-4a97-910a-41f39b7234fd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Vibing-venturs-backend/src/main/java/com/vibingventurs/ContactController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Vibing-venturs-backend/src/main/java/com/vibingventurs/Product.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Vibing-venturs-backend/src/main/java/com/vibingventurs/ProductController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Vibing-venturs-backend/src/main/java/com/vibingventurs/ProductRepository.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Vibing-venturs-backend/src/main/java/com/vibingventurs/Productservice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newsletter.php" beforeDir="false" afterPath="$PROJECT_DIR$/php files/newsletter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reserva-form.php" beforeDir="false" afterPath="$PROJECT_DIR$/php files/reserva-form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/send_email.php" beforeDir="false" afterPath="$PROJECT_DIR$/php files/send_email.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Vibing-venturs-backend/src/main/java/com/vibingventurs/VibingVentursBackendApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Vibing-venturs-backend/src/main/java/com/vibingventurs/VibingVentursBackendApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -28,11 +33,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Vibing-venturs-backend" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -88,7 +94,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
     "copilot.chat.legacySessionMetadata.migrated": "true",
-    "git-widget-placeholder": "form-feature",
+    "git-widget-placeholder": "master",
     "junie.onboarding.icon.badge.shown": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/pluralsight/Vibing-Venturs-website",
@@ -106,6 +112,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\pluralsight\Vibing-Venturs-website" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\pluralsight\Vibing-Venturs-website\php files" />
     </key>
   </component>
   <component name="RunManager">
@@ -137,7 +146,7 @@
       <updated>1788379007990</updated>
       <workItem from="1788379009526" duration="3756000" />
       <workItem from="1788406896096" duration="1259000" />
-      <workItem from="1788572741274" duration="8586000" />
+      <workItem from="1788572741274" duration="9894000" />
     </task>
     <servers />
   </component>
