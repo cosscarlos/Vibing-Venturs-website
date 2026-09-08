@@ -151,10 +151,10 @@
         <div class="row3">
             <h2>NEWS LETTER</h2>
             <p>Suscríbete a nuestro news letter para tener las últimas noticias y ofertas</p>
-            <form id="contactForm" action="newsletter.php" method="POST" class="newsletter-form">
-                <input type="text" id="name" name="name" placeholder="Nombre:" required>
-                <input type="email" id="email" name="email" placeholder="Correo:" required>              
-                <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+            <form id="newsletterForm" action="newsletter.php" method="POST" class="newsletter-form">
+                <input type="text" id="nl-name" name="name" placeholder="Nombre:" required>
+                <input type="email" id="nl-email" name="email" placeholder="Correo:" required>
+                <input type="hidden" id="nl-g-recaptcha-response" name="g-recaptcha-response">
                 <button type="submit">Suscribirse</button>
             </form>
         </div>
@@ -192,11 +192,16 @@
                         body: JSON.stringify({
                             name: name,
                             email: email,
-                            Message: message,
+                            message: message,
                             recaptchaToken: token
                         })
                     })
-                        .then(response => response.json())
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error('Error en la red');
+                            }
+                            return response.text();
+                        })
                         .then(data => {
                             alert('Mensaje enviado correctamente. ¡Gracias por contactarnos!');
                             document.getElementById('contactForm').reset();
