@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BackgroundAgentGlobalSettings">
-    <option name="selectedModelId" value="auto" />
+    <option name="selectedModelId" value="claude-haiku-5.5" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c26a739c-019d-4a97-910a-41f39b7234fd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Vibing-venturs-backend/src/main/java/com/vibingventurs/ContactController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Vibing-venturs-backend/src/main/java/com/vibingventurs/ContactController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vibing-venturs-backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Vibing-venturs-backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vibing-venturs-backend/src/main/java/com/vibingventurs/sevice/ContactService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Vibing-venturs-backend/src/main/java/com/vibingventurs/sevice/ContactService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +23,12 @@
   </component>
   <component name="CopilotPersistence">
     <persistenceIdMap>
+      <entry key="_/Users/carloscoss/Desktop/Vibing-Venturs-website" value="3JtCOt0xqV3u1fUVdhCKMEOBwaw" />
       <entry key="_C:/pluralsight/Vibing-Venturs-website" value="3ImoKUntcei3Ryq5ZH8zh1EJsug" />
     </persistenceIdMap>
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="87" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -28,7 +38,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../Vibing-venturs-backend" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -49,6 +59,69 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.757858283255199" />
+      <entry key="MS500" value="1.946318911615402" />
+      <entry key="S2" value="2.5928982592766805" />
+      <entry key="S5" value="5.114511380740827" />
+      <entry key="S10" value="7.915553490084718" />
+      <entry key="S30" value="12.422965224940594" />
+      <entry key="S60" value="14.401508622394552" />
+      <entry key="M2" value="15.609791093693696" />
+      <entry key="M5" value="16.420070313694858" />
+      <entry key="M10" value="16.70587902493677" />
+      <entry key="M15" value="16.802981771185273" />
+      <entry key="M30" value="16.901018545126018" />
+      <entry key="H1" value="16.95039051662068" />
+      <entry key="H2" value="16.975165485031273" />
+      <entry key="H4" value="16.98757528863154" />
+      <entry key="D1" value="16.99792817861229" />
+      <entry key="W1" value="16.999704000128986" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.706406556247082" />
+      <entry key="MS500" value="1.9343286062932514" />
+      <entry key="S2" value="2.587961391207463" />
+      <entry key="S5" value="5.109616274406246" />
+      <entry key="S10" value="7.9116019427334185" />
+      <entry key="S30" value="12.420914760829847" />
+      <entry key="S60" value="14.400330499341207" />
+      <entry key="M2" value="15.609156073167513" />
+      <entry key="M5" value="16.41980407584059" />
+      <entry key="M10" value="16.705743757497164" />
+      <entry key="M15" value="16.802891106881056" />
+      <entry key="M30" value="16.900972967787457" />
+      <entry key="H1" value="16.95036766624207" />
+      <entry key="H2" value="16.975154044362707" />
+      <entry key="H4" value="16.98756956442093" />
+      <entry key="D1" value="16.997927224038257" />
+      <entry key="W1" value="16.99970386374806" />
+    </decayedShown>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4,
   &quot;fromUser&quot;: false
@@ -57,11 +130,11 @@
   <component name="ProjectSessionTemplates">
     <option name="panelTemplate">
       <template>
-        <option name="modeId" value="Agent" />
+        <option name="modeId" value="Ask" />
         <option name="model">
           <model>
             <option name="modelType" value="builtin_id" />
-            <option name="modelValue" value="auto" />
+            <option name="modelValue" value="claude-haiku-5.5" />
           </model>
         </option>
         <option name="targetType" value="BACKGROUND" />
@@ -76,15 +149,22 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Maven.Vibing-venturs-backend [clean,-Dskips].executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;Spring Boot.VibingVentursBackendApplication.executor&quot;: &quot;Run&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
     &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;form-feature&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature-ContactRequest&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/pluralsight/Vibing-Venturs-website&quot;,
@@ -94,8 +174,12 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/pluralsight/Vibing-Venturs-website/VibingVenturs-Backend/src/main/java/com/pluralsight/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/carloscoss/Library/Application Support/JetBrains/IntelliJIdea2026.2/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -103,6 +187,11 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\pluralsight\Vibing-Venturs-website" />
     </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean -Dskips" />
+    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
@@ -124,6 +213,14 @@
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10968.63" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10968.63" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c26a739c-019d-4a97-910a-41f39b7234fd" name="Changes" comment="" />
@@ -134,6 +231,16 @@
       <workItem from="1788379009526" duration="3756000" />
       <workItem from="1788406896096" duration="1259000" />
       <workItem from="1788572741274" duration="8586000" />
+      <workItem from="1790470932851" duration="1849000" />
+      <workItem from="1790532801908" duration="33000" />
+      <workItem from="1790823669225" duration="7180000" />
+      <workItem from="1791658959788" duration="5465000" />
+      <workItem from="1793150564542" duration="1369000" />
+      <workItem from="1793151963947" duration="54000" />
+      <workItem from="1793152027240" duration="5137000" />
+      <workItem from="1793570171565" duration="1817000" />
+      <workItem from="1794016946503" duration="1796000" />
+      <workItem from="1794019039254" duration="2945000" />
     </task>
     <servers />
   </component>
@@ -150,5 +257,9 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
