@@ -1,0 +1,110 @@
+h3{
+    text-align: center;
+    background-color: #d9e6ff;
+    
+}
+p{
+    text-align: center;
+}
+.form-reserva {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+   
+    
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: 900px;
+}
+
+.datos-personales {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+label{
+    text-align: center;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+}
+.input-group2 {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  
+
+    
+}
+
+.input-group2 input[type="checkbox"] {
+  
+    max-width: 30px;
+}
+select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+.form-reserva button {
+    display: block;
+    
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #F3AB00;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-family: Poppins;
+    cursor: pointer;
+    width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.form-reserva button:hover {
+    background-color: #d99a00;
+}
+button{
+    align-items: center;
+    
+}
+@media (max-width: 900px) {
+    .form-group {
+        width: 100%;
+    }
+    .input-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
