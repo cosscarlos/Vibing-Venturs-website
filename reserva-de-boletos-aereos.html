@@ -57,7 +57,7 @@
         <section>
             <p>En este formulario se te pedirán datos detallados para poder realizar tu cotización de forma efectiva.</p>
             <p>NOTA: Llenar 1 reserva de boleto <b>por persona.</b></p>
-            <form class="form-reserva" action="reserva-form.php" method="post">
+            <form id="form-reserva" class="form-reserva" action="reserva-form.php" method="post">
                 <div class="form-group">
                     <h3>Datos personales</h3>
                     <div class="datos-personales">
@@ -85,7 +85,7 @@
                     <div class="datos-personales">
                         <div class="input-group">
                             <label for="name1">N° de pasaporte</label>
-                            <input type="file" name="pasaporte" id="pasaporte" pattern="[A-Za-z0-9]+" title="Solo caracteres alfanuméricos" required>
+                            <input type="file" name="pasaporte" id="passport" pattern="[A-Za-z0-9]+" title="Solo caracteres alfanuméricos" required>
                         </div>
                     </div>
                     <br>
@@ -219,7 +219,7 @@
                     </div> 
                     <br>
                     <div class="input-group2">
-                        <input type="checkbox" name="Check-in_vibing" id="Check-in_vibing"  title="Marca la casilla en caso SI quieras check-in por parte de Vibing Venturs" required> 
+                        <input type="checkbox" name="Check-in_vibing" id="Check-in_vibing_checkbox"  title="Marca la casilla en caso SI quieras check-in por parte de Vibing Venturs" required>
                         <label for="expiracion">Acepto <a href="terminos-y-condiciones.html" target="_blank"> Términos y Condiciones</a></label>
                                
                     </div> 
@@ -239,18 +239,6 @@
 
                 </div>
             </form>
-            <!--Recaptcha de formulario de reserva-->
-            <script>
-                grecaptcha.ready(function() {
-                    document.getElementById('form-reserva').addEventListener('submit', function(event) {
-                        event.preventDefault();
-                        grecaptcha.execute('6Lejig8qAAAAAO-Ea7tGydzKM8V4V1qM5HK9o3GT', {action: 'submit'}).then(function(token) {
-                            document.getElementById('g-recaptcha-response').value = token;
-                            document.getElementById('form-reserva').submit();
-                        });
-                    });
-                });
-            </script>
         </section>
     </main>
 
@@ -299,11 +287,85 @@
     <script src="https://www.google.com/recaptcha/api.js?render=6Lejig8qAAAAAO-Ea7tGydzKM8V4V1qM5HK9o3GT"></script>
     <script>
         grecaptcha.ready(function() {
-            document.getElementById('contactForm').addEventListener('submit', function(event) {
+            document.getElementById('form-reserva').addEventListener('submit', function(event) {
                 event.preventDefault();
                 grecaptcha.execute('6Lejig8qAAAAAO-Ea7tGydzKM8V4V1qM5HK9o3GT', {action: 'submit'}).then(function(token) {
-                    document.getElementById('g-recaptcha-response').value = token;
-                    document.getElementById('contactForm').submit();
+                    const name1 = document.getElementById('name1').value;
+                    const name2 = document.getElementById('name2').value;
+                    const lastname1 = document.getElementById('lastname1').value;
+                    const lastname2 = document.getElementById('lastname2').value;
+                    const passport = document.getElementById('passport').value;
+                    const expedicion = document.getElementById('expedicion').value;
+                    const expiracion = document.getElementById('expiracion').value;
+                    const edad = document.getElementById('edad').value;
+                    const codigo_area = document.getElementById('codigo_area').value;
+                    const telefono = document.getElementById('telefono').value;
+                    const email_reserva = document.getElementById('email_reserva').value;
+                    const origen = document.getElementById('origen').value;
+                    const destino = document.getElementById('destino').value;
+                    const salida = document.getElementById('salida').value;
+                    const regreso = document.getElementById('regreso').value;
+                    const maletas_mano = document.getElementById('maletas_mano').value;
+                    const maletas_facturada = document.getElementById('maletas_facturada').value;
+                    const preseleccion = document.getElementById('preseleccion').checked;
+                    const cambio_itinerario = document.getElementById('Cambio_itinerario').checked;
+                    const asiento_premium = document.getElementById('Asiento_Premium').checked;
+                    const acceso_sala_vip = document.getElementById('Acceso_sala_VIP').checked;
+                    const check_in_vibing = document.getElementById('Check-in_vibing').checked;
+                    const codigo_area_emergencia = document.getElementById('Codigo_area_emergencia').value;
+                    const telefono_emergencia = document.getElementById('telefono_emergencia').value;
+                    const email_emergencia = document.getElementById('Email_emergencia').value;
+                    const terminos_condiciones = document.getElementById('Check-in_vibing_checkbox').checked;
+
+                    fetch('http://localhost:8080/api/formReserva', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            name1: name1,
+                            name2: name2,
+                            lastname1: lastname1,
+                            lastname2: lastname2,
+                            passport: passport,
+                            expedicion: expedicion,
+                            expiracion: expiracion,
+                            edad: edad,
+                            codigo_area: codigo_area,
+                            telefono: telefono,
+                            email_reserva: email_reserva,
+                            origen: origen,
+                            destino: destino,
+                            salida: salida,
+                            regreso: regreso,
+                            maletas_mano: maletas_mano,
+                            maletas_facturada: maletas_facturada,
+                            preseleccion: preseleccion,
+                            cambio_itinerario: cambio_itinerario,
+                            asiento_premium: asiento_premium,
+                            acceso_sala_vip: acceso_sala_vip,
+                            check_in_vibing: check_in_vibing,
+                            codigo_area_emergencia: codigo_area_emergencia,
+                            telefono_emergencia: telefono_emergencia,
+                            email_emergencia: email_emergencia,
+                            terminos_condiciones: terminos_condiciones,
+                            recaptchaToken: token
+                        })
+                    })
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error('Error en la red');
+                            }
+                            return response.text();
+                        })
+                        .then(data => {
+                            alert('Reserva enviada correctamente. ¡Gracias por contactarnos!');
+                            document.getElementById('form-reserva').reset();
+                        })
+                        .catch(error => {
+                            alert('Error al enviar la reserva');
+                            console.error('Error:', error);
+                        });
                 });
             });
         });
