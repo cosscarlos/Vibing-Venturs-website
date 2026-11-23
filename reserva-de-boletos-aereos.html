@@ -57,7 +57,7 @@
         <section>
             <p>En este formulario se te pedirán datos detallados para poder realizar tu cotización de forma efectiva.</p>
             <p>NOTA: Llenar 1 reserva de boleto <b>por persona.</b></p>
-            <form id="form-reserva" class="form-reserva" action="reserva-form.php" method="post">
+            <form id="form-reserva" class="form-reserva">
                 <div class="form-group">
                     <h3>Datos personales</h3>
                     <div class="datos-personales">
@@ -229,14 +229,6 @@
                     <button type="submit">Enviar</button>
                     
 
-                   
-                        
-                        
-
-
-
-
-
                 </div>
             </form>
         </section>
@@ -286,9 +278,10 @@
     <script src="js/script.js"></script>
     <script src="https://www.google.com/recaptcha/api.js?render=6Lejig8qAAAAAO-Ea7tGydzKM8V4V1qM5HK9o3GT"></script>
     <script>
-        grecaptcha.ready(function() {
-            document.getElementById('form-reserva').addEventListener('submit', function(event) {
-                event.preventDefault();
+        document.getElementById('form-reserva').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            grecaptcha.ready(function() {
                 grecaptcha.execute('6Lejig8qAAAAAO-Ea7tGydzKM8V4V1qM5HK9o3GT', {action: 'submit'}).then(function(token) {
                     const name1 = document.getElementById('name1').value;
                     const name2 = document.getElementById('name2').value;
