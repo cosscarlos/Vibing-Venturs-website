@@ -310,7 +310,7 @@
                     const email_emergencia = document.getElementById('Email_emergencia').value;
                     const terminos_condiciones = document.getElementById('Check-in_vibing_checkbox').checked;
 
-                    fetch('http://localhost:8080/api/formReserva', {
+                    fetch('http://localhost:8080/api/forms/reserva', {
                         method: 'POST',
                         headers: {
                             'Content-Type': 'application/json'
